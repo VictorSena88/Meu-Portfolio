@@ -1,67 +1,119 @@
-/* Importação Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+    /* Importação Font */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 
-/* Estilo global para body */
-body {
-    background-color: white;
-    padding: 2%;
-    margin: 2%;
-    font-family: 'Special Gothic Expanded One', sans-serif;
-}
+    /* Estilo global para body */
+    body {
+        background-color: white;
+        padding: 2%;
+        margin: 2%;
+        font-family: 'Special Gothic Expanded One', sans-serif;
+    }
 
-/* Estilos individuais das habilidades */
-.habilidade-html {
-    color: tomato;
-    font-size: 18px;
-    /* unidade absoluta */
-}
+    /* Estilos individuais das habilidades */
+    .habilidade-html {
+        color: tomato;
+        font-size: 18px;
+        /* unidade absoluta */
+    }
 
-.habilidade-css {
-    color: rgb(60, 108, 179);
-    font-size: 1.2em;
-    /* unidade relativa */
-}
+    .habilidade-css {
+        color: rgb(60, 108, 179);
+        font-size: 1.2em;
+        /* unidade relativa */
+    }
 
-.habilidade-js {
-    color: goldenrod;
-    font-size: 110%;
-    /* unidade relativa */
-}
+    .habilidade-js {
+        color: goldenrod;
+        font-size: 110%;
+        /* unidade relativa */
+    }
 
-/* Seletor restritivo: parágrafos dentro da div.bio */
-.bio p {
-    font-size: 1em;
-    color: #333;
-    background-color: steelblue;
-    padding: 1em;
-    border-radius: 8px;
-}
+    /* Seletor restritivo: parágrafos dentro da div.bio */
+    .bio p {
+        font-size: 1em;
+        color: #333;
+        background-color: steelblue;
+        padding: 1em;
+        border-radius: 8px;
+    }
 
-/* Adicionando margens e paddings com unidades relativas */
-section {
-    margin-top: 2em;
-    padding: 1em;
-}
+    /* Adicionando margens e paddings com unidades relativas */
+    section {
+        margin-top: 2em;
+        padding: 1em;
+    }
 
-div {
-    list-style: none;
+    div {
+        list-style: none;
 
-}
+    }
 
-div img {
-    width: 30px;
-    height: auto;
+    div img {
+        width: 30px;
+        height: auto;
 
-}
+    }
 
-.foto-perfil img {
-    border-radius: 10px;
-    width: 250px;
-    height: 350px;
-    margin: 0 auto;
-    display: block;
-}
+    .foto-perfil img {
+        border-radius: 10px;
+        width: 250px;
+        height: 350px;
+        margin: 0 auto;
+        display: block;
+    }
 
-.foto-perfil {
-    text-align: center;
-}
+    .foto-perfil {
+        text-align: center;
+    }
+
+    .carrossel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        max-width: 600px;
+        margin: 40px auto;
+        background-image: url('./arquivos/fundo.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    .container-carrossel {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .slides img {
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .btn {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .anterior {
+        position: absolute;
+        left: 0;
+    }
+
+    .proximo {
+        position: absolute;
+        right: 0;
+    }
