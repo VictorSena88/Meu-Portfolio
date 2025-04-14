@@ -1,0 +1,67 @@
+/* Importação Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Estilo global para body */
+body {
+    background-color: rgb(186, 243, 243);
+    padding: 2%;
+    margin: 2%;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+}
+
+/* Estilos individuais das habilidades */
+.habilidade-html {
+    color: tomato;
+    font-size: 18px;
+    /* unidade absoluta */
+}
+
+.habilidade-css {
+    color: rgb(60, 108, 179);
+    font-size: 1.2em;
+    /* unidade relativa */
+}
+
+.habilidade-js {
+    color: goldenrod;
+    font-size: 110%;
+    /* unidade relativa */
+}
+
+/* Seletor restritivo: parágrafos dentro da div.bio */
+.bio p {
+    font-size: 1em;
+    color: #333;
+    background-color: steelblue;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* Adicionando margens e paddings com unidades relativas */
+section {
+    margin-top: 2em;
+    padding: 1em;
+}
+
+div {
+    list-style: none;
+
+}
+
+div img {
+    width: 30px;
+    height: auto;
+
+}
+
+.foto-perfil img {
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+.foto-perfil {
+    text-align: center;
+}
