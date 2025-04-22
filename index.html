@@ -8,6 +8,8 @@
 
     <!-- Link para CSS externo -->
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
     <!-- Estilos para <h2> -->
     <style>
@@ -21,6 +23,35 @@
 
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">Hidden brand</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="foto-perfil">
         <img src="./arquivos/EU.jpg" alt="minha foto">
         <!-- Título com estilo inline -->
@@ -61,115 +92,39 @@
         <h3>Sou colecionador de miniaturas hotwheels e também gosto de jogar videogame.</h3>
         <section class="carrossel">
             <h2></h2>
-            <button class="btn anterior">⟨</button>
             <div class="container-carrossel">
-                <div class="slides">
-                    <img src="./arquivos/foto (1).png" alt="Foto 1">
-                    <img src="./arquivos/foto (2).png" alt="Foto 2">
-                    <img src="./arquivos/foto (3).png" alt="Foto 3">
-                    <img src="./arquivos/foto (4).png" alt="Foto 4">
-                    <img src="./arquivos/foto (5).png" alt="Foto 5">
-                    <img src="./arquivos/foto (6).png" alt="Foto 6">
-                    <img src="./arquivos/foto (7).png" alt="Foto 7">
-                    <img src="./arquivos/foto (9).png" alt="Foto 9">
-                    <img src="./arquivos/foto (10).png" alt="Foto 10">
-                    <img src="./arquivos/foto (11).png" alt="Foto 11">
-                    <img src="./arquivos/foto (12).png" alt="Foto 12">
-                    <img src="./arquivos/foto (13).png" alt="Foto 13">
-                    <img src="./arquivos/foto (14).png" alt="Foto 14">
-                    <img src="./arquivos/foto (15).png" alt="Foto 15">
-                    <img src="./arquivos/foto (16).png" alt="Foto 16">
-                    <img src="./arquivos/foto (17).png" alt="Foto 17">
-                    <img src="./arquivos/foto (18).png" alt="Foto 18">
-                    <img src="./arquivos/foto (19).png" alt="Foto 19">
-                    <img src="./arquivos/foto (20).png" alt="Foto 20">
-                    <img src="./arquivos/foto (21).png" alt="Foto 21">
-                    <img src="./arquivos/foto (22).png" alt="Foto 22">
-                    <img src="./arquivos/foto (23).png" alt="Foto 23">
-                    <img src="./arquivos/foto (24).png" alt="Foto 24">
-                    <img src="./arquivos/foto (25).png" alt="Foto 25">
-                    <img src="./arquivos/foto (26).png" alt="Foto 26">
-                    <img src="./arquivos/foto (27).png" alt="Foto 27">
-                    <img src="./arquivos/foto (28).png" alt="Foto 28">
-                    <img src="./arquivos/foto (29).png" alt="Foto 29">
-                    <img src="./arquivos/foto (30).png" alt="Foto 30">
-                    <img src="./arquivos/foto (31).png" alt="Foto 31">
-                    <img src="./arquivos/foto (32).png" alt="Foto 32">
-                    <img src="./arquivos/foto (33).png" alt="Foto 33">
-                    <img src="./arquivos/foto (34).png" alt="Foto 34">
-                    <img src="./arquivos/foto (35).png" alt="Foto 35">
-                    <img src="./arquivos/foto (36).png" alt="Foto 36">
-                    <img src="./arquivos/foto (37).png" alt="Foto 37">
-                    <img src="./arquivos/foto (38).png" alt="Foto 38">
-                    <img src="./arquivos/foto (39).png" alt="Foto 39">
-                    <img src="./arquivos/foto (40).png" alt="Foto 40">
-                    <img src="./arquivos/foto (41).png" alt="Foto 41">
-                    <img src="./arquivos/foto (42).png" alt="Foto 42">
-                    <img src="./arquivos/foto (43).png" alt="Foto 43">
-                    <img src="./arquivos/foto (44).png" alt="Foto 44">
-                    <img src="./arquivos/foto (45).png" alt="Foto 45">
-                    <img src="./arquivos/foto (46).png" alt="Foto 46">
-                    <img src="./arquivos/foto (47).png" alt="Foto 47">
-                    <img src="./arquivos/foto (48).png" alt="Foto 48">
-                    <img src="./arquivos/foto (49).png" alt="Foto 49">
-                    <img src="./arquivos/foto (50).png" alt="Foto 50">
-                    <img src="./arquivos/foto (51).png" alt="Foto 51">
-                    <img src="./arquivos/foto (52).png" alt="Foto 52">
-                    <img src="./arquivos/foto (53).png" alt="Foto 53">
-                    <img src="./arquivos/foto (54).png" alt="Foto 54">
-                    <img src="./arquivos/foto (55).png" alt="Foto 55">
-                    <img src="./arquivos/foto (56).png" alt="Foto 56">
-                    <img src="./arquivos/foto (57).png" alt="Foto 57">
-                    <img src="./arquivos/foto (58).png" alt="Foto 58">
-                    <img src="./arquivos/foto (59).png" alt="Foto 59">
-                    <img src="./arquivos/foto (60).png" alt="Foto 60">
-                    <img src="./arquivos/foto (61).png" alt="Foto 61">
-                    <img src="./arquivos/foto (62).png" alt="Foto 62">
-                    <img src="./arquivos/foto (63).png" alt="Foto 63">
-                    <img src="./arquivos/foto (64).png" alt="Foto 64">
-                    <img src="./arquivos/foto (65).png" alt="Foto 65">
-                    <img src="./arquivos/foto (66).png" alt="Foto 66">
-                    <img src="./arquivos/foto (67).png" alt="Foto 67">
-                    <img src="./arquivos/foto (68).png" alt="Foto 68">
-                    <img src="./arquivos/foto (69).png" alt="Foto 69">
-                    <img src="./arquivos/foto (70).png" alt="Foto 70">
-                    <img src="./arquivos/foto (71).png" alt="Foto 71">
-                    <img src="./arquivos/foto (72).png" alt="Foto 72">
-                    <img src="./arquivos/foto (73).png" alt="Foto 73">
-                    <img src="./arquivos/foto (74).png" alt="Foto 74">
-                    <img src="./arquivos/foto (75).png" alt="Foto 75">
-                    <img src="./arquivos/foto (76).png" alt="Foto 76">
-                    <img src="./arquivos/foto (77).png" alt="Foto 77">
-                    <img src="./arquivos/foto (78).png" alt="Foto 78">
-                    <img src="./arquivos/foto (79).png" alt="Foto 79">
-                    <img src="./arquivos/foto (80).png" alt="Foto 80">
-                    <img src="./arquivos/foto (81).png" alt="Foto 81">
-                    <img src="./arquivos/foto (82).png" alt="Foto 82">
-                    <img src="./arquivos/foto (83).png" alt="Foto 83">
-                    <img src="./arquivos/foto (84).png" alt="Foto 84">
-                    <img src="./arquivos/foto (85).png" alt="Foto 85">
-                    <img src="./arquivos/foto (86).png" alt="Foto 86">
-                    <img src="./arquivos/foto (87).png" alt="Foto 87">
-                    <img src="./arquivos/foto (88).png" alt="Foto 88">
-                    <img src="./arquivos/foto (89).png" alt="Foto 89">
-                    <img src="./arquivos/foto (90).png" alt="Foto 90">
-                    <img src="./arquivos/foto (91).png" alt="Foto 91">
-                    <img src="./arquivos/foto (92).png" alt="Foto 92">
-                    <img src="./arquivos/foto (93).png" alt="Foto 93">
-                    <img src="./arquivos/foto (94).png" alt="Foto 94">
-                    <img src="./arquivos/foto (95).png" alt="Foto 95">
-                    <img src="./arquivos/foto (96).png" alt="Foto 96">
-                    <img src="./arquivos/foto (97).png" alt="Foto 97">
-                    <img src="./arquivos/foto (98).png" alt="Foto 98">
-                    <img src="./arquivos/foto (99).png" alt="Foto 99">
-                    <img src="./arquivos/foto (100).png" alt="Foto 100">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./arquivos/foto (1).png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./arquivos/foto (2).png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./arquivos/foto (3).png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./arquivos/foto (4).png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>
-            <button class="btn proximo">⟩</button>
         </section>
     </div>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
